@@ -1,0 +1,425 @@
+
+
+/* rhomboid frame */
+
+:root{
+    --Grey: 32px;
+    --Red: 42px;
+}
+
+.carousel-container{
+    margin-top: 350px;
+}
+
+
+
+.rhomboid-frame {
+    width: 1500px;
+    height: 300px;
+    background-color: #cfcfcf; /* Set the background color for the frame */
+    transform: skew(-30deg); /* Skew the container to create a rhomboid shape */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    margin-left: 40%;
+}
+
+.rhomboid-frame img {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    transform: skew(30deg) translateX(-15%); 
+    /* Counteract the skew to make the image look normal */
+
+
+}
+
+.rhomb-style{
+        /* display: block; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Maintain aspect ratio while covering the container */
+        transform: skew(30deg) translateX(-15%); 
+        /* Counteract the skew to make the image look normal */
+    
+    
+
+}
+
+.work-container{
+    position: relative;
+    color: #fff;
+}
+
+.work-container-e{
+    position: relative;
+    color: #fff;
+    margin-left: -%;
+}
+
+/* .inter-container{
+    display: flex;
+    justify-content: center;
+
+} */
+
+.inter{
+    font-size: xx-large;
+    font-weight: 500;
+    
+    transform: skew(30deg);
+    padding: 20px 10px 10px 20px;
+    writing-mode: vertical-lr;
+    margin-left: 61vw;
+    margin-top: 30px;
+    position: absolute;
+}
+
+.rhomboid-shape {
+    position: absolute;
+    width: 1500px;
+    height: 250px;
+    background-color: #ED1640; /* Set the background color for the frame */
+    transform: skew(-30deg); /* Skew the container to create a rhomboid shape */
+    overflow: hidden; /* Hide overflowing content */
+    margin-left: 23%;
+    margin-top: -30px;;
+}
+
+.rhomboid-shape-e {
+    position: absolute;
+    width: 1500px;
+    height: 250px;
+    background-color: #555253; /* Set the background color for the frame */
+    transform: skew(-30deg); /* Skew the container to create a rhomboid shape */
+    overflow: hidden; /* Hide overflowing content */
+    margin-left: 23%;
+    margin-top: -30px;;
+}
+
+
+
+
+
+
+
+
+/* intro */
+
+
+.offer-container{
+    position: relative;
+}
+
+.offer, .rhomboid-frame{
+    position: absolute;
+}
+
+.offer{
+    margin-top: 13px;
+}
+
+.offer-item{
+    font-weight: bold;
+    font-size: var(--Grey);
+    color: #939899;
+    padding-bottom: 100px;
+}
+
+
+/*animation*/
+.red {
+    color: #ED1640;
+    animation: growFont 1s ease;
+    /* font-size: 42px; */
+    font-size: var(--Red);
+}
+
+
+@keyframes growFont {
+    from {
+        font-size: var(--Grey); /* Initial font size */
+    }
+    to {
+        font-size: var(--Red); /* Final font size */
+    }
+}
+
+
+.interier{
+    margin-top: 400px;
+    text-align: right;
+}
+
+
+
+.interier-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 28px;
+    margin-bottom: 15px;
+}
+
+.exterier-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 28px;
+    margin-bottom: 15px;
+}
+
+.exterier{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    text-align: right;
+
+
+}
+
+/* .carousel-container{
+    margin-bottom: 100px;
+
+} */
+
+
+
+.col-md-6 {
+    color: #fff;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.col-md-6 h3 {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.contact-form {
+    box-shadow: 0 5px 30px rgba(0,0,0,.3);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ed1640;
+    padding: 30px 40px;
+    border-radius: 4px;
+    text-transform: none;
+    color: #fff;
+}
+
+section.contact .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+    text-align: center
+}
+
+section.contact .contact-form .form-control {
+    border: none
+}
+
+
+
+ body{
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    line-height: 20px;
+    transition: all .35s;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .1em;
+    padding-top: 1px; 
+    padding-bottom: 1px;
+    margin-bottom: 0;
+    overflow-x: hidden;
+  
+} 
+
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #666;
+    --bs-nav-link-hover-color: #ed1640;
+    --bs-nav-link-disabled-color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    list-style: none;
+}
+
+header{
+    margin-bottom: 0;
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #ed1640;
+    --bs-nav-pills-link-active-bg: #25559c00;
+}
+
+
+@media (max-width:1420px) {
+    /* body{
+        background-color: #0a125c;
+    } */
+
+    .rhomboid-frame {
+        margin-left: 50%;
+    }
+
+    /* .inter{
+        margin-left: 40vw;
+    } */
+}
+
+@media (max-width:1375px) {
+    /* body{
+        background-color: #6a6d83;
+    } */
+
+    .rhomboid-frame {
+        margin-left: 55%;
+    }
+
+    .inter{
+        margin-left: 60vw;
+    }
+}
+
+@media (max-width:772px) {
+    /* body{
+        background-color: #5c0a1a;
+    } */
+
+    .rhomboid-frame {
+        margin-left: 54%;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:1120px) {
+    .collapsed{
+        display: none;
+    }
+
+    body{
+        margin-left: 50%;
+        margin-right: 50%;   }
+
+    /* .inter{
+        margin-left: 64vw;
+    } */
+        
+        /* .rhomboid-frame{
+            margin-left: 40%;
+        } */
+
+
+}
+
+@media (min-width:930px) {
+    .collapsed{
+        display: none;
+    }
+
+    body{
+        margin-left: 15%;
+        margin-right: 15%;   }
+
+        ul, li{
+            list-style: none;
+            transform: translateX(-15px);
+        }
+
+
+}
+
+@media (max-width:930px) {
+    /* body{
+        background-color: rgb(15, 196, 60);
+    } */
+
+    .nav-pills {
+        display: none;
+    }
+
+    ul, li{
+        list-style: none;
+        transform: translateX(-10px);
+    }
+
+    header{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        margin-left: 10px;
+    }
+
+    .collapsed{
+        /* background-color: #ed1640; */
+        margin-left: auto;
+        margin-right: 1%;
+    }
+
+    .inter{
+        writing-mode: horizontal-tb;
+        margin-left: 44vw;
+        margin-top: 13px;
+    }
+
+
+
+
+}
+
+/* @media (max-width:525px) {
+    body{
+        background-color: #777777;
+    }
+
+    .rhomboid-frame {
+        margin-left: 30%;
+    }
+
+    :root{
+        --Grey: 22px;
+        --Red: 32px;
+    }
+} */
+@media (max-width:765px) {
+    body{
+        background-color: #1a0308;
+    }
+
+    .rhomboid-frame {
+        margin-left: 53%;
+    }
+
+    :root{
+        --Grey: 22px;
+        --Red: 32px;
+    }
+
+    .inter{
+        margin-left: 37vw;
+    }
+}
